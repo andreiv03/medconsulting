@@ -1,5 +1,5 @@
 {
-  "name": "med-consulting",
+  "name": "medconsulting",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
