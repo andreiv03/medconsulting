@@ -1,0 +1,218 @@
+.hero_section {
+  transform: translateX(-7vw);
+  width: 100vw;
+  min-height: 100vh;
+  padding: 200px 7vw;
+  background-image: url("https://www.onemedical.com/media/images/services-hero_recut.original.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .title {
+    margin: 1rem 0 2.5rem;
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .button {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background: var(--background);
+    color: var(--accent);
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 100ms ease-in;
+
+    &:hover {
+      background: var(--line);
+    }
+  }
+}
+
+.content {
+  margin: 5rem 0;
+  color: var(--accent);
+
+  .top_section {
+    margin-bottom: 4rem;
+
+    h2 {
+      margin-bottom: 0.75rem;
+      font-size: 2.25rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+
+  .items {
+    .item {
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+
+      .wrapper {
+        position: relative;
+        width: 100%;
+        margin-bottom: 2rem;
+
+        & > div {
+          position: unset !important;
+        }
+
+        img {
+          position: relative !important;
+          width: 100% !important;
+          height: unset !important;
+          object-fit: contain;
+        }
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+          font-size: 2.25rem;
+          font-weight: 600;
+        }
+
+        p {
+          margin: 1rem 0 1.5rem;
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        a {
+          width: fit-content;
+          color: var(--accent);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          span {
+            font-size: 1rem;
+            font-weight: 600;
+          }
+
+          svg {
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 150ms ease-in;
+          }
+
+          &:hover > svg {
+            transform: translateX(0.25rem);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero_section {
+    text-align: center;
+    align-items: center;
+
+    .title {
+      max-width: 70vw;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .content {
+    .top_section {
+      max-width: 60vw;
+      margin: 0 auto 5rem;
+      text-align: center;
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      p {
+        font-size: 1.125rem;
+      }
+    }
+
+    .items {
+      .item {
+        flex-direction: row;
+        gap: 4rem;
+
+        &:not(:last-child) {
+          margin-bottom: 5rem;
+        }
+
+        .wrapper,
+        .container {
+          flex: 1;
+        }
+
+        .container {
+          h3 {
+            font-size: 3rem;
+          }
+
+          p {
+            font-size: 1.125rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1262px) {
+  .hero_section {
+    .title {
+      font-size: 5.5rem;
+    }
+  }
+
+  .content {
+    .top_section {
+      margin-bottom: 7.5rem;
+
+      h2 {
+        font-size: 4.5rem;
+      }
+    }
+
+    .items {
+      .item {
+        &:not(:last-child) {
+          margin-bottom: 7.5rem;
+        }
+
+        .container {
+          h3 {
+            font-size: 4.5rem;
+          }
+        }
+      }
+    }
+  }
+}

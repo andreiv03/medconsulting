@@ -1,0 +1,157 @@
+.footer {
+  width: 100%;
+  padding: 2rem 7vw;
+  background: var(--accent);
+  color: var(--background);
+
+  .prefooter {
+    text-align: center;
+    margin: 2rem 0 4rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .button {
+      width: fit-content;
+      height: fit-content;
+      margin: 1.5rem auto 0;
+      padding: 1rem 3rem;
+      border-radius: 2rem;
+      background: var(--background);
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 500;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: 100ms ease-in;
+
+      &:first-of-type {
+        background: var(--secondary);
+        color: var(--foreground);
+      }
+
+      &:hover {
+        background: var(--dark-accent);
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+
+      a {
+        color: var(--background);
+        font-size: 1.125rem;
+        font-weight: 500;
+
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .social_media {
+      margin-top: 1.5rem;
+      display: flex;
+
+      a {
+        color: var(--background);
+        font-size: 1.5rem;
+
+        &:not(:last-child) {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+  .bottom_section {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+
+      a {
+        margin: 0 1rem 0.75rem 0;
+        color: var(--background);
+        font-size: 0.875rem;
+        font-weight: 400;
+      }
+    }
+
+    p {
+      margin-top: 0.75rem;
+      font-size: 0.875rem;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .prefooter {
+      h2 {
+        margin: 0 auto;
+        font-size: 3.75rem;
+        white-space: nowrap;
+      }
+
+      .buttons {
+        width: fit-content;
+        margin: 2rem auto 0;
+        display: flex;
+
+        .button {
+          margin: 0;
+
+          &:first-of-type {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+
+    .content {
+      justify-content: space-between;
+      flex-direction: row;
+
+      .links {
+        max-width: 500px;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        a:not(:last-child) {
+          margin: 0 2rem 2rem 0;
+        }
+      }
+
+      .social_media {
+        margin: 0;
+      }
+    }
+
+    .bottom_section {
+      margin-top: 4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1262px) {
+  .footer {
+    .prefooter {
+      h2 {
+        font-size: 5.5rem;
+      }
+    }
+  }
+}

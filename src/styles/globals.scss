@@ -1,0 +1,57 @@
+:root {
+  --foreground: #000000;
+  --background: #ffffff;
+  --line: #e2e0de;
+
+  --accent: #6633cc;
+  --dark-accent: #5229a3;
+  --light-accent: #f6f3fc;
+  --secondary: #ff6633;
+
+  --header-height: 66px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+input,
+select,
+button {
+  color: var(--foreground);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+input,
+select,
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+html,
+body {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.page {
+  min-height: 100vh;
+  padding: 0 7vw;
+}
