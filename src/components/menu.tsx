@@ -102,21 +102,21 @@ export default function Menu() {
           </div>
 
           <Link href="/hospitals">Spitale</Link>
-          <Link href="/prices">Prețuri</Link>
+          <Link href="/">Prețuri</Link>
           <Link href="/contact">Contact</Link>
         </div>
 
         <div className={styles["buttons"]}>
-          <Link href="/search" className={styles["mini_link"]}>
+          <Link className={styles["mini_link"]} href="/search">
             <BiSearch />
           </Link>
-          <Link href="/account" className={styles["mini_link"]}>
+          <Link className={styles["mini_link"]} href="/">
             Contul meu
           </Link>
-          <Link href="/login" className={styles["mini_link"]}>
+          <Link className={styles["mini_link"]} href="/">
             Autentificare
           </Link>
-          <Link href="/register" className={styles["mini_link"]}>
+          <Link className={styles["mini_link"]} href="/">
             Înregistrare
           </Link>
         </div>

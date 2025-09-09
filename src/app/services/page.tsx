@@ -1,7 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
 import { IoIosArrowForward } from "react-icons/io";
 
+import Image from "@/components/image";
 import styles from "@/styles/pages/services.module.scss";
 
 export default function Services() {

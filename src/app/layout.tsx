@@ -9,6 +9,8 @@ import Menu from "@/components/menu";
 import Label from "@/components/label";
 import "@/styles/globals.scss";
 
+const basePath = process.env["NEXT_PUBLIC_BASE_PATH"] ?? "";
+
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
@@ -25,9 +27,9 @@ export const metadata: Metadata = {
       follow: false,
     },
   },
-  manifest: "/manifest.json",
+  manifest: `${basePath}/manifest.json`,
   icons: {
-    icon: "/favicon.ico",
+    icon: `${basePath}/favicon.ico`,
   },
 };
 

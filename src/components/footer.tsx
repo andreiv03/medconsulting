@@ -20,12 +20,12 @@ export default function Footer() {
           <Link href="/about-us">Despre noi</Link>
           <Link href="/services">Servicii</Link>
           <Link href="/hospitals">Spitale</Link>
-          <Link href="/prices">Prețuri</Link>
+          <Link href="/">Prețuri</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/">Media Center - Anulat</Link>
           <Link href="/">Blog</Link>
           <Link href="/">Recenzii</Link>
-          <Link href="/account">Cont</Link>
+          <Link href="/">Cont</Link>
         </div>
 
         <div className={styles["social_media"]}>

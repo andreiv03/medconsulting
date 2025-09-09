@@ -3,9 +3,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build --turbopack",
+    "build": "GH_PAGES=true NEXT_PUBLIC_BASE_PATH=/medconsulting next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predeploy": "npm run build && echo > out/.nojekyll",
+    "deploy": "gh-pages -d out -t"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
@@ -24,6 +26,7 @@
     "@types/react-dom": "^19.1.8",
     "eslint": "^9.34.0",
     "eslint-config-next": "^15.5.0",
+    "gh-pages": "^6.3.0",
     "sass": "^1.91.0",
     "typescript": "^5.9.2"
   }

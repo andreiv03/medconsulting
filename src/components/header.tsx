@@ -44,13 +44,13 @@ export default function Header() {
             <Link href="/about-us">Despre noi</Link>
             <Link href="/services">Servicii</Link>
             <Link href="/hospitals">Spitale</Link>
-            <Link href="/prices">Prețuri</Link>
+            <Link href="/">Prețuri</Link>
             <Link href="/contact">Contact</Link>
           </div>
 
           <div className={styles["links"]}>
-            <Link href="/login">Autentificare</Link>
-            <Link className={styles["cta"]} href="/register">
+            <Link href="/">Autentificare</Link>
+            <Link className={styles["cta"]} href="/">
               Înregistrare
             </Link>
             <Link className={styles["search"]} href="/search">

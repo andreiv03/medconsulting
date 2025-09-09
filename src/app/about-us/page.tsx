@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { motion, type Variants } from "framer-motion";
 
+import Image from "@/components/image";
 import styles from "@/styles/pages/about-us.module.scss";
 
 const heroSectionVariants: Variants = {

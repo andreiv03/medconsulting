@@ -3,9 +3,9 @@
 import { useEffect, useState } from "react";
 import { IoIosArrowForward } from "react-icons/io";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, AnimatePresence, type Variants } from "framer-motion";
 
+import Image from "@/components/image";
 import styles from "@/styles/pages/home.module.scss";
 
 const SERVICES: string[] = [
@@ -124,7 +124,7 @@ export default function Home() {
             much more.
           </span>
 
-          <Link href="/prices">
+          <Link href="/">
             <span>Check your coverage</span>
             <IoIosArrowForward />
           </Link>
